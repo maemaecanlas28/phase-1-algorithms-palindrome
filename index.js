@@ -1,9 +1,20 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let reverse = word.split("").reverse().join("");
+  if (reverse === word) {
+    return true;
+  }
+  return false;
 }
 
+console.log(isPalindrome("robot"));
 /* 
-  Add your pseudocode here
+  word.split("") => splits the strings into an array of elements ["r", "o", "b", "o", "t"]
+  .reverse() => reverse the split array of strings ["t", "o", "b", "o", "r"];
+  .join("") => joins all of the elements in the array to form a string: "tobor"
+
+  assign an if statement that if the reverse word does NOT equal the word passed in as an argument, the return false.
+
 */
 
 /*
