@@ -1,9 +1,15 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let reverse = word.split("").reverse().join("");
+  if (reverse === word) {
+    return true;
+  }
+  return false;
 }
 
+console.log(isPalindrome("robot"));
 /* 
-  Add your pseudocode here
+  
 */
 
 /*
